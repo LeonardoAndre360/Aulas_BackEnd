@@ -1,0 +1,15 @@
+# Iniciaizar um novo repositório Git
+# git init : Inicializa um novo repositório Git no diretório atual começando o controle de versão
+
+# Adicionar arquivos ao índice
+# git add . :Adiciona todos os arquivos modificados ao índice, preparando-os para o commit
+
+# Criar um commit com uma mensagem descritiva
+# git commit -m "Iniciar projeto com estrutura básica" : Cria um commit com uma mensagem descritiva, registrando as alterações no repositório.
+
+# Criar uma nova branch para uma funcionalidade
+# git checkout -b nova-funcionalidade : Cria e muda para uma nova branch chamada nova-funcionalidade, permitindo o desenvolvimento isolado
+
+# Mesclar o branch de funcionalidade na branch principal
+# git checkout main : Muda para a branch principal main
+#git merge nova-funcionalidade : Mescla as alterações da branch nova-funcionalidade na branch principal main
