@@ -1,0 +1,8 @@
+CREATE VIEW EmployeeView AS
+'CREATE VIEW EmployeeView AS: Cria uma nova view chamada EmployeeView.'
+SELECT EmployeeID, FirstName, LastName, Department
+"SELECT EmployeeID, FirstName, LastName, Department: Define as colunas que serão incluídas na view."
+FROM Employees
+"FROM Employees: Especifica a tabela de onde os dados serão extraídos."
+WHERE Department = 'Sales';
+"WHERE Department = 'Sales': Filtra os dados para incluir apenas os funcionários do departamento de vendas."

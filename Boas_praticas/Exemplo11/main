@@ -1,0 +1,25 @@
+-- Criar uma tabela de exemplo
+CREATE TABLE Usuarios (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100)
+);
+-- CREATE TABLE: Cria uma nova tabela chamada "Usuarios" com colunas para "id", "nome" e "email". 
+-- A coluna "id" é definida como PRIMARY KEY para garantir a unidade
+
+-- Inserir dados na tabela
+INSERT INTO Usuarios (id, nome, email) VALUES (1, 'João Silva', 'joao@example.com');
+INSERT INTO Usuarios (id, nome, email) VALUES (2, 'Maria Oliveira', 'maria@example.com');
+-- INSERT INTO : Insere novos registros na tabela "Usuarios" com valores para "id", "nome" e "email"
+
+-- Selecionar dados da tabela
+SELECT * FROM Usuarios
+-- SELECT *: Recupera todos os registro da tabela "Usuarios".
+
+-- Atualizar dados na tabela
+UPDATE Usuarios SET email = 'joao.silva@example.com' WHERE id = 1;
+-- UPDATE: Atualiza o campo "email" dos usuários com id = 1.
+
+-- Deletar dados da tabela
+DELETE FROM Usuarios WHERE id = 2;
+-- DELETE: Remove o registro do usuário com id = 2 da tabela "Usuarios".
