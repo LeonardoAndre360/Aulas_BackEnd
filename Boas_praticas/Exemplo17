@@ -1,0 +1,24 @@
+version: '3.8'
+# version: '3.8': Define a versão do Docker Compose a ser usada.
+services:
+# services: Define os serviços que serão executados. Neste caso, um serviço chamado web que utiliza a imagem myapp:latest.
+  web:
+    image: myapp:latest
+    deploy:
+# deploy: Configurações de deploy, incluindo o número de réplicas, limites de recursos (CPU e memória) e política de reinício.
+      replicas: 3
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "80:80"
+# ports: Mapeia a porta 80 do contêiner para a porta 80 do host.
+    networks:
+      - webnet
+
+networks:
+# networks: Define a rede webnet para o serviço, permitindo a comunicação entre contêineres.
+  webnet:
